@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SamoraMachelChambersGroupOfAdvocates</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" id="font-awesome-css" href="~/css/font-awesome.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="~/SamoraMachelChambersGroupOfAdvocates.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -50,121 +50,67 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="footer-wrapper">
-        <div class="footer-container container">
-            <div class="top-social-wrapper" style="align-content:stretch">
-                <label>Follow Us</label>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img width="32" height="32" src="~/css/facebook.png" alt="Facebook" />    
-                    </a>
-                    <span> &nbsp;</span>
-                    <a href="https://x.com/home" target="_blank">
-                        <img width="32" height="32" src="~/css/twitter.png" alt="Twitter" />
-                    </a>
-                    <span> &nbsp;</span>
-                    <a href="https://web.whatsapp.com/" target="_blank">
-                        <img width="32" height="32" src="~/css/whatsapp.png" alt="WhatsApp" />
-                    </a>
-                </div>
-            </div>
-            <br />
-            <br />
-            <div class="footer-column five columns" id="footer-widget-1">
-                <div id="nav_menu-7" class="widget widget_nav_menu gdlr-item gdlr-widget">
-                    <h3 class="gdlr-widget-title">
-                        Overview
-                    </h3>
-                    <div class="clear">
+    <footer class="page-footer font-small unique-color-dark text-center" id="footer">
+        <div style="background-color:#0c2f44">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-centre">
+                    <!-- Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 md-md-0">
+                        <h6 class="mb-0" style="color:white;">Get connected with us on social networks!</h6>
                     </div>
-                    <div class="menu-footer-container" >
-                        <ul id="menu-footer" class="menu">
-                            Our members practice in all courts and forums. The fields of law traditionally dealt with by our members include the following fields of practice but (not limited thereto):
-                            <li id="menu-item-4525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4525">
-                                Arbitration
-                            </li>
-                            <li id="menu-item-4526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4526">
-                                Claims Against Police
-                            </li>
-                            <li id="menu-item-4527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4527">
-                                Commercial Law
-                            </li>
-                            <li id="menu-item-4528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4528">
-                                Company Law
-                            </li>
-                            <li id="menu-item-4529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4529">
-                                Constitutional Law
-                            </li>
-                            <li id="menu-item-4530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4530">
-                                Construction Law
-                            </li>
-                            <li id="menu-item-4531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4531">
-                                Consumer Protection Law
-                            </li>
-                            <li id="menu-item-4532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4532">
-                                Contract Law
-                            </li>
-                            <li id="menu-item-4533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4533">
-                                Corporate Law
-                            </li>
-                            <li id="menu-item-4534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4534">
-                                Criminal Law
-                            </li>
-                            <li id="menu-item-4535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4535">
-                                Customary Law
-                            </li>
-                            <li id="menu-item-4536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4536">
-                                Eviction Law
-                            </li>
-                            <li id="menu-item-4537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4537">
-                                Family Law
-                            </li>
-                            <li id="menu-item-4538" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4538">
-                                General Civil Law
-                            </li>
-                            <li id="menu-item-4539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4539">
-                                General Litigation Law
-                            </li>
-                            <li id="menu-item-4540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4540">
-                                Human Rights Law
-                            </li>
-                            <li id="menu-item-4541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4541">
-                                Immigration & Refugee Law
-                            </li>
-                            <li id="menu-item-4542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4542">
-                                Insolvency Law
-                            </li>
-                            <li id="menu-item-4543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4543">
-                                Insurance
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-column five columns" id="footer-widget-2"></div>
-            <div class="footer-column five columns" id="footer-widget-3">
-                <div id="text-11" class="widget widget_text gdlr-item gdlr-widget">
-                    <h3 class="gdlr-widget-title">
-                        Contact Information
-                    </h3>
-                    <div class="clear">
-                    </div>
-                    <div class="textwidget">
-                        <i class="gdlr-icon fa fa-map-marker" style="color: #fff; font-size: 16px; ">
-                        </i>
-                        <a target="_blank" href="https://maps.app.goo.gl/4wCQUykVnN2VJCBK6" rel="noopener">
-                            Samora Machel Crescent, Mandela Park, Khayelitsha, 7784
+
+                    <!-- Grid column-->
+                    <div class="flex-center">
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f fa-lg text-white mr-4"></i>
                         </a>
+
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="https://x.com/home">
+                            <i class="fab fa-twitter fa-lg text-white mr-4"></i>
+                        </a>
+
+                        <!-- Google +-->
+                        <a class="gplus-ic" href="https://www.google.com/intl/en/gmail/about/">
+                            <i class="fab fa-google-plus-g fa-lg text-white mr-4"></i>
+                        </a>
+                        
+                        <!-- LinkedIn-->
+                        <a class="li-ic" href="https://za.linkedin.com/">
+                            <i class="fab fa-linkedin fa-lg text-white mr-4"></i>
+                        </a>
+
+                        <!-- Instagram --> 
+                        <a class="ins-ic" href="https://www.instagram.com/accounts/login/?hl=en">
+                            <i class="fab fa-instagram fa-lg text-white mr-4"></i>
+                        </a>
+                    </div>
+                    <span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span>
+                    <span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span>
+                    <span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span>
+                    <!-- Grid column-->
+                    <div class="flex-right">
+                        <h6 class="mb-0" style="color:white;">Contact Information</h6>
                         <div class="clear">
                         </div>
-                        <i class="fa fa-envelope-o" style="color: #fff; font-size: 16px; ">
-                        </i>
-                        <a href="mailto:reception@samoramachelchambers.com">reception@samoramachelchambers.com</a>
-                        <div class="clear">
+                        <div class="textwidget">
+                            <i class="gdlr-icon fa fa-map-marker" style="color: #fff; font-size: 16px; ">
+                            </i>
+                            <a target="_blank" href="https://maps.app.goo.gl/4wCQUykVnN2VJCBK6" rel="noopener">
+                                Samora Machel Crescent, Mandela Park, Khayelitsha, 7784
+                            </a>
+                            <div class="clear">
+                            </div>
+                            <i class="fa fa-envelope" style="color: #fff; font-size: 16px; ">
+                            </i>
+                            <a href="mailto:reception@samoramachelchambers.com">reception@samoramachelchambers.com</a>
+                            <div class="clear">
+                            </div>
+                            <i class="fa fa-phone" style="color: #fff; font-size: 16px; ">
+                            </i>
+                            <a href="tel:064 776 1095">064 776 1095</a>
                         </div>
-                        <i class="fa fa-phone" style="color: #fff; font-size: 16px; ">
-                        </i>
-                        <a href="tel:064 776 1095">064 776 1095</a>
                     </div>
                 </div>
             </div>
@@ -180,11 +126,21 @@
                 </div>
             </div>
 
-        </div>  
+        </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            var docHeight = $(window).height();
+            var footerHeight = $('#footer').height();
+            var footerTop = $('#footer').position().top + footerHeight;
+
+            if (footerTop < docHeight)
+                $('#footer').css('margine-top', 10 + (docHeight - footerTop) + 'px');
+        });
+    </script>
 </body>
 </html>

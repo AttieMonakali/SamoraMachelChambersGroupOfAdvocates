@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\AboutUs\" />
-    <Folder Include="Views\Advocates\" />
     <Folder Include="Views\News\" />
   </ItemGroup>
 

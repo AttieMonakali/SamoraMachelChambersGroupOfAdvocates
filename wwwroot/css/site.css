@@ -17,16 +17,6 @@ html {
   min-height: 100%;
 }
 
-body {
-    font-size: 15px;
-    font-family: "Open Sans";
-    /*line-height: 1.9;*/
-/*    font-family: Arial, Helvetica, sans-serif;*/
-    /*overflow-y: scroll;*/
-/*    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;*/
-}
-
 .footer-container {
     padding-top: 60px;
 }
@@ -47,10 +37,6 @@ body {
     padding: 15px 0px;
 }
 
-footer {
-    display: block;
-    unicode-bidi: isolate;
-}
 
 .container {
     padding: 0px;
@@ -64,15 +50,42 @@ footer {
     border-color: #262626;
 }*/
 
-div {
-    display: block;
-    unicode-bidi: isolate;
+
+
+/*fields of Practice are set here*/
+.elementor-section .elementor-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }
 
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+
+body, button, input, select, textarea, .ast-button, .ast-custom-button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: var(--ast-body-line-height, 1.65em);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+body {
+    color: #808285;
+    background: #fff;
+    font-style: normal;
 }

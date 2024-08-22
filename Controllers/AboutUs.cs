@@ -79,5 +79,17 @@ namespace SamoraMachelChambersGroupOfAdvocates.Controllers
                 return View();
             }
         }
+        public ActionResult MemberUnathi()
+        {
+            return View();
+        }
+        public ActionResult MemberMvuleni()
+        {
+            return View();
+        }
+        public ActionResult MemberSiphumelele()
+        {
+            return View();
+        }
     }
 }

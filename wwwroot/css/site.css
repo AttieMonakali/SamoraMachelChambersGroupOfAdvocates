@@ -17,16 +17,6 @@ html {
   min-height: 100%;
 }
 
-body {
-    font-size: 15px;
-    font-family: "Open Sans";
-    /*line-height: 1.9;*/
-/*    font-family: Arial, Helvetica, sans-serif;*/
-    /*overflow-y: scroll;*/
-/*    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;*/
-}
-
 .footer-container {
     padding-top: 60px;
 }
@@ -47,10 +37,6 @@ body {
     padding: 15px 0px;
 }
 
-footer {
-    display: block;
-    unicode-bidi: isolate;
-}
 
 .container {
     padding: 0px;
@@ -64,40 +50,42 @@ footer {
     border-color: #262626;
 }*/
 
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
 
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
 
-.h2-16 {
-    font-size: 16px !important;
+/*fields of Practice are set here*/
+.elementor-section .elementor-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }
 
 
-.views-view-grid .views-row {
-    float: left;
-    clear: both;
-    width: 100%;
+*, :after, :before {
+    box-sizing: inherit;
 }
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+
+body, button, input, select, textarea, .ast-button, .ast-custom-button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: var(--ast-body-line-height, 1.65em);
 }
 
-.grid-column-padding {
-    padding: 0 15px 0 15px !important;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-element.style {
-    width: 33.333333333333%;
+footer {
+    margin-top: auto;
+}
+
+body {
+    color: #808285;
+    background: #fff;
+    font-style: normal;
 }

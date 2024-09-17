@@ -110,6 +110,8 @@ footer {
 
 .mb-2 {
     margin-bottom: .5rem !important;
+/*    width: 100%;*/
+    height: 50%;
 }
 
 .col-12 {
@@ -156,4 +158,8 @@ footer {
     padding-left: calc(var(--bs-gutter-x)* .5);
     margin-right: auto;
     margin-left: auto;
+}
+
+.q_logo img.dark, .q_logo img.light, .q_logo img.mobile, .q_logo img.popup, .q_logo img.sticky {
+    opacity: 0;
 }

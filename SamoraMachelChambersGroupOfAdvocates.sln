@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamoraMachelChambersGroupOfAdvocates", "SamoraMachelChambersGroupOfAdvocates.csproj", "{61BDD681-8F31-495E-86A2-390C94498593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SamoraMachelChambersGroupOfAdvocates", "SamoraMachelChambersGroupOfAdvocates.csproj", "{61BDD681-8F31-495E-86A2-390C94498593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamoraMachelAPI", "..\SamoraMachelAPI\SamoraMachelAPI.csproj", "{F9A252EB-A041-4C80-88FD-EFB319DDDABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{61BDD681-8F31-495E-86A2-390C94498593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BDD681-8F31-495E-86A2-390C94498593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61BDD681-8F31-495E-86A2-390C94498593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A252EB-A041-4C80-88FD-EFB319DDDABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A252EB-A041-4C80-88FD-EFB319DDDABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A252EB-A041-4C80-88FD-EFB319DDDABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A252EB-A041-4C80-88FD-EFB319DDDABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

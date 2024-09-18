@@ -1,6 +1,6 @@
 ﻿namespace SamoraMachelChambersGroupOfAdvocates.Service
 {
-    public class NullMailService : IMailService
+    public class NullMailService
     {
         private readonly ILogger<NullMailService> _logger;
         public NullMailService(ILogger<NullMailService> logger)

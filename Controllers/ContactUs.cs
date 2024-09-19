@@ -1,19 +1,17 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MailKit;
 using Microsoft.AspNetCore.Mvc;
-using SamoraMachelChambersGroupOfAdvocates.Service;
-using SamoraMachelChambersGroupOfAdvocates.Models;
+using SamoraMachelAPI.Model;
 
 namespace SamoraMachelChambersGroupOfAdvocates.Controllers
 {
     public class ContactUs : Controller
     {
-        //private readonly TestContext _context;
+
         private readonly IMailService _mailService;
 
-        //public ContactUs(IMailService mailService, TestContext testContext)
+        //public ContactUs(IMailService mailService)
         //{
         //    _mailService = mailService;
-        //    _context = testContext;
 
         //}
 
@@ -31,12 +29,12 @@ namespace SamoraMachelChambersGroupOfAdvocates.Controllers
         }
 
         [HttpPost("contactUs")]
-        public IActionResult Create(ContactUs contactUs)
+        public IActionResult Create(ContactU contactU)
         {
             if (ModelState.IsValid)
             {
                 // Send the email
-                //_mailService.SendMessage("reception@samoramachelchambers.com", $": {contactUs.Subject}", $"From: {contactUs.Name} - {contactUs.Email}, Message: {contactU.Message}");
+                //_mailService.SendEmailAsync("reception@samoramachelchambers.com", $": {contactU.Subject}", $"From: {contactU.Name} - {contactU.Email}, Message: {contactU.Message}");
                 ViewBag.UserMessage = "Mail Sent";
                 ModelState.Clear();
             }

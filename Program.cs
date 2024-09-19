@@ -1,7 +1,26 @@
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using SamoraMachelAPI.MailService;
+using SamoraMachelAPI.Model;
+using SamoraMachelAPI.Repo;
+using System.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddRazorPages();
+//builder.Services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+builder.Services.AddScoped<IMailServices, MailServices>();
+builder.Services.AddTransient<ISamoraRepo, SamoraRepo>();
+
+builder.Host.ConfigureServices(services =>
+{
+    services.TryAddSingleton<IService, Service1>();
+});
+
+builder.Services.TryAddSingleton<IService, Service2>();
+
 
 var app = builder.Build();
 
@@ -25,3 +44,18 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+class Service1 : IService
+{
+
+}
+
+class Service2 : IService
+{
+
+}
+
+interface IService
+{
+
+}
